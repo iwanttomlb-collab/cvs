@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Module 1｜讀懂循環</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<nav><a href="index.html">← 回目錄</a> ｜ <a href="m2.html">下一模組:瓣膜疾病 →</a></nav>
+<h1>Module 1｜讀懂循環</h1>
+<p>從 ICU 床邊的每一個數字開始。這個模組是後面所有模組的判讀基礎:先學會分辨「壓力」與「灌流」,才能理解術後併發症章節在急什麼。</p>
+
+<article id="1-1">
+<h2>Lesson 1-1｜ICU 交班數字:血壓正常不等於沒休克</h2>
+<p class="tldr"><b>TL;DR</b>｜A-line 上的血壓是最容易騙人的數字。判斷心臟表現要看的是灌流證據(尿量、四肢溫度、意識、末梢 perfusion),不是收縮壓。</p>
+
+<h3>Hook</h3>
+<p>一位 56 歲男性因前胸痛延伸到後背、雙下肢麻木、冒冷汗到急診,CT 顯示 acute type A aortic dissection 一路延伸到腹部血管,影響雙下肢血流。這種病人<b>不開刀,兩天內死亡率超過 50%</b>。他接受了升主動脈置換 + 降主動脈支架,術後右下肢血流仍差,又從升主動脈拉了一條皮下人工血管繞道供應右下肢。這整套課程的數字,都繞著這樣一個病人打轉。</p>
+
+<h3>Framework</h3>
+<p>心臟外科 ICU 判讀的核心對比是:<b>壓力數字(pressure)≠ 灌流數字(perfusion)</b>。</p>
+<p>Arterial pressure 會被太多東西拉高——病人躁動會升高、強心劑會升高。一個處在 shock 狀態的病人,給了夠強的 inotropes,血壓可以很漂亮,但全身仍在 hypoperfusion。反過來說,尿量、末梢溫度、意識狀態這些「便宜」的指標,才直接反映 cardiac performance。</p>
+
+<h3>Structured Detail｜術後 8 小時交班單怎麼讀</h3>
+<table>
+<tr><th>交班項目</th><th>該案例數值</th><th>意義</th></tr>
+<tr><td>I/O</td><td>positive 479</td><td>液體平衡方向</td></tr>
+<tr><td>Urine output</td><td>330 mL</td><td>術後有尿,基本上是好現象</td></tr>
+<tr><td>引流管(R/L pericardial)</td><td>220 / 80 mL</td><td>出血是否受控</td></tr>
+<tr><td>CVP</td><td>7</td><td>右心充填壓</td></tr>
+<tr><td>ETT 固定深度</td><td>22 cm</td><td>確認管路未移位</td></tr>
+<tr><td>鎮靜程度</td><td>RSS</td><td>Ramsay Sedation Scale,護理師常用</td></tr>
+</table>
+<p>Monitor 上一整排數字的拆解(以講者示範畫面為例):</p>
+<ul>
+<li>HR 87、SpO₂ 100</li>
+<li><b>112/64 (81)</b> ← 動脈壓,括號內為 MAP</li>
+<li><b>39/31,34</b> ← 肺動脈壓,後者為 mean PA pressure</li>
+<li><b>CVP 13</b></li>
+<li>RR 12;部分機型另外顯示 cardiac output</li>
+</ul>
+<p>此外還要能判讀「這台機器是什麼」:ECMO、主動脈氣球幫浦、呼吸器、洗腎機、暫時性 pacemaker,都是心外 ICU 的日常配置。</p>
+
+<p class="visual"><b>Visual</b>｜想像床邊一張分兩欄的卡片。左欄「Pressure」放 ABP/MAP、PAP、CVP;右欄「Perfusion」放尿量、四肢溫度、意識、末梢顏色、lactate。中間畫一條雙向箭頭,箭頭上寫「可以解離」——左欄好看、右欄崩壞,是心外 ICU 最危險的組合。</p>
+
+<p class="exam"><b>⭐ 考試重點</b>｜「動脈壓高低不代表整體灌流」是本課反覆強調的判讀原則,也是後面 ScvO₂ / lactate 章節的前提。</p>
+
+<p class="recall"><b>Recall Check</b>｜一位術後病人 BP 138/76、HR 92,看起來穩定,但過去 4 小時尿量只有 40 mL、雙腳摸起來冰冷。用 pressure vs perfusion 架構說明你會把他歸類成什麼狀態,以及你會先追哪一項數據。</p>
+</article>
+
+<article id="1-2">
+<h2>Lesson 1-2｜Swan-Ganz:一根管子,四個壓力</h2>
+<p class="tldr"><b>TL;DR</b>｜Swan-Ganz(肺動脈導管)沿路量到不同壓力,靠的是「尖端走到哪裡」。近端測 CVP、尖端測 PAP、氣球打起來測 wedge pressure 當作左心 preload,再用溫度變化算 cardiac output。</p>
+
+<h3>Hook</h3>
+<p>一根從頸靜脈放進去的導管,在推進過程中會依序跑出 RA → RV → PA → wedge 四種波形。<b>光看波形變了,你就知道管子走到哪裡了</b>——這是置放過程中最重要的定位方式。</p>
+
+<h3>Framework</h3>
+<p>Swan-Ganz 的所有功能都來自同一個設計邏輯:<b>不同位置的偵測點,對應不同的血流動力學意義</b>。它具侵犯性,但能同時提供左心、右心與全身氧供需的資訊。</p>
+
+<h3>Structured Detail｜一根管子四種資訊</h3>
+<table>
+<tr><th>偵測點 / 動作</th><th>測到什麼</th><th>臨床意義</th></tr>
+<tr><td>近端 port(RA)</td><td>CVP</td><td>右心充填壓</td></tr>
+<tr><td>通過 RV 時</td><td>RV 壓力波形</td><td>定位用</td></tr>
+<tr><td>尖端在 PA</td><td>Pulmonary artery pressure</td><td>肺循環壓力</td></tr>
+<tr><td>尖端氣球充氣</td><td>Wedge pressure</td><td>間接反映 LA pressure / LVEDP,即左心 preload</td></tr>
+<tr><td>Thermal sensor</td><td>溫度變化 → thermodilution</td><td>計算 cardiac output</td></tr>
+<tr><td>靜脈端取樣</td><td>SvO₂</td><td>休克鑑別(見 Lesson 1-3)</td></tr>
+</table>
+<p>置放時的波形順序:<b>RA(低平)→ RV(高振幅、舒張壓低)→ PA(舒張壓抬高)→ 氣球充氣後 wedge(壓力再降、波形變平)</b>。</p>
+<p>術後 CXR 上怎麼找它:一條在心影內繞一圈、走向肺動脈的細線。同一張片子上通常還會看到 2–3 根 chest tube,以及(若換過瓣膜)瓣膜的環狀影。</p>
+
+<p class="visual"><b>Visual</b>｜畫一條由頸靜脈進入、向下穿過 RA、轉進 RV、再向上進入 PA 的路徑。路徑旁依序貼四張小波形圖,像里程碑。末端畫一顆充氣氣球,旁邊標註「≈ LA pressure ≈ LV preload」。</p>
+
+<p class="exam"><b>⭐ 考試重點</b>｜講者在課末明確點名:<b>Swan-Ganz 的原理、置放過程中要注意的事、以及壓力波形的變化</b>是考試重點。本課的表格與波形順序請直接記。</p>
+
+<p class="recall"><b>Recall Check</b>｜推進 Swan-Ganz 時,波形的舒張壓突然抬高、且不再出現高振幅收縮波。導管尖端最可能到了哪裡?下一步要做什麼動作才能取得左心 preload 的資訊?</p>
+</article>
+
+<article id="1-3">
+<h2>Lesson 1-3｜ScvO₂:繞全身一圈後,剩下多少氧?</h2>
+<p class="tldr"><b>TL;DR</b>｜動脈血氧飽和度約 100%,繞行全身一圈回到中心靜脈約剩 <b>70–80%(約 75%)</b>——大約四分之一的氧被組織用掉。偏離這個區間,就是在告訴你 demand 或 supply 出了問題。</p>
+
+<h3>Hook</h3>
+<p>如果你在一個病人身上量到中心靜脈氧飽和度<b>高達 90 幾</b>,臨床上的解讀往往很不樂觀:多重器官衰竭合併 DIC 時,大量器官被血栓塞住,氧氣從主動脈打出去繞一圈幾乎沒被消耗就回來了。講者的說法很直接——這病人大概快死了。</p>
+
+<h3>Framework</h3>
+<p>ScvO₂ 是一個<b>氧供需平衡的總和指標</b>。它不告訴你哪裡壞掉,但告訴你「組織到底有沒有在用氧、用得多還是少」。</p>
+
+<h3>Structured Detail｜三種偏離的讀法</h3>
+<table>
+<tr><th>ScvO₂</th><th>代表</th><th>常見情境</th></tr>
+<tr><td>70–80%(約 75%)</td><td>正常</td><td>約 1/4 的氧被組織消耗</td></tr>
+<tr><td>偏低(如 30)</td><td>組織耗氧過多 / 供應不足</td><td>感染、發燒、hyperthyroidism 等代謝亢進</td></tr>
+<tr><td>偏高(如 90)</td><td>耗氧變少,或存在 shunt</td><td>先天性心臟病 VSD、肺靜脈回流異常</td></tr>
+<tr><td>90 以上</td><td>組織幾乎不再攝氧</td><td>多重器官衰竭 / DIC,預後極差</td></tr>
+</table>
+
+<p class="visual"><b>Visual</b>｜一個環形迴路,起點標「動脈 100%」,繞經全身組織方塊後回到終點標「靜脈 75%」。組織方塊上畫一個可調的閥門:開太大 → 靜脈端數字掉到 30;完全關住(shunt 或組織不攝氧)→ 數字衝到 90 以上。</p>
+
+<p class="exam"><b>⭐ 考試重點</b>｜「正常 ScvO₂ 約 75%、範圍 70–80%」與「高 ScvO₂ 的兩大成因:耗氧下降 vs shunt」是必背。</p>
+
+<p class="recall"><b>Recall Check</b>｜兩位病人的 ScvO₂ 都是 88%:一位是發紺的嬰兒,一位是加護病房的敗血症合併 DIC 老年病人。同樣的數字,背後的機轉分別是什麼?</p>
+</article>
+
+<article id="1-4">
+<h2>Lesson 1-4｜ScvO₂ × Lactate:用兩個數字分辨四種狀態</h2>
+<p class="tldr"><b>TL;DR</b>｜單看 ScvO₂ 會誤判,單看 lactate 會被肝功能干擾。兩者交叉才能分出「正常 / shunt 或 sepsis / 代償中的低心輸出 / 嚴重休克」。</p>
+
+<h3>Hook</h3>
+<p>正常人休息狀態下的 lactate 幾乎是<b>接近零</b>的。一旦上升,代表身體正在進行無氧代謝——氧氣供應不足或需求過高。但注意:lactate 由肝臟代謝,<b>肝功能差的病人判讀要格外小心</b>。</p>
+
+<h3>Framework</h3>
+<p>把兩個軸交叉,得到一張四象限判讀表。這是床邊最快能把「休克 / 非休克」分出來的工具。</p>
+
+<h3>Structured Detail｜四象限</h3>
+<table>
+<tr><th>ScvO₂</th><th>Lactate</th><th>判讀</th></tr>
+<tr><td>正常或上升</td><td>低</td><td>正常狀態</td></tr>
+<tr><td>上升</td><td>正常或上升</td><td>存在 shunt,或屬 sepsis(較早期)</td></tr>
+<tr><td>偏低</td><td>低</td><td>Well-compensated low cardiac output</td></tr>
+<tr><td>偏低</td><td>明顯上升</td><td>嚴重休克</td></tr>
+</table>
+<p>若再加上 Swan-Ganz 提供的 CVP、血壓、cardiac output,可進一步鑑別 hypovolemic shock、obstructive shock、cardiogenic shock,以及 septic shock 的早期與晚期。</p>
+
+<p class="visual"><b>Visual</b>｜一張 2×2 方格。橫軸 lactate(低→高),縱軸 ScvO₂(低→高)。左上「正常」、右上「shunt / sepsis」、左下「代償中的低心輸出」、右下「嚴重休克」。右下角塗最深的顏色。</p>
+
+<p class="exam"><b>⭐ 考試重點</b>｜四象限表是本模組最容易入題的整理;記得附帶條件「lactate 判讀需考量肝功能」。</p>
+
+<p class="recall"><b>Recall Check</b>｜術後病人 ScvO₂ 62%、lactate 1.1、血壓 108/62、尿量尚可、四肢微涼。他落在四象限的哪一格?你的下一步是加強 inotrope,還是先觀察並找可矯正的 preload 問題?說明理由。</p>
+</article>
+
+<footer>來源:國立臺灣大學醫學院心臟血管外科系列課程錄音逐字稿。數值與研究結果依講者原述保留。</footer>
+</body></html>
